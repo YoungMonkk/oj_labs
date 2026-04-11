@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Inter, Caveat } from 'next/font/google'
+import { Inter, Shadows_Into_Light } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
@@ -8,10 +8,11 @@ const inter = Inter({
   variable: '--font-inter'
 });
 
-const caveat = Caveat({ 
+const handwriting = Shadows_Into_Light({
   subsets: ["latin"],
-  variable: '--font-caveat'
-});
+  weight: "400",
+  variable: '--font-handwritten'
+})
 
 export const metadata: Metadata = {
   title: 'OJ Labs | Web Development & Design Services',
@@ -43,7 +44,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
-      <body className={`${inter.variable} ${caveat.variable} font-sans antialiased bg-background text-foreground`}>
+      <body className={`${inter.variable} ${handwriting.variable} font-sans antialiased bg-background text-foreground`}>
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>

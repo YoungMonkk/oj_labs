@@ -20,7 +20,7 @@ export function Navbar() {
         {/* Logo */}
         <Link 
           href="/" 
-          className="font-[family-name:var(--font-script)] text-3xl text-white/90 hover:text-[#f97316] transition-colors"
+          className="hand-nav text-4xl text-white/80 hover:text-[#f97316] transition-colors"
         >
           oj
         </Link>
@@ -31,7 +31,7 @@ export function Navbar() {
             <Link
               key={link.href}
               href={link.href}
-              className="font-[family-name:var(--font-script)] text-xl text-white/60 hover:text-white transition-colors"
+              className="hand-nav text-[2rem] text-white/55 hover:text-white transition-colors"
             >
               {link.label}
             </Link>
@@ -56,7 +56,7 @@ export function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="font-[family-name:var(--font-script)] text-2xl text-white/60 hover:text-white transition-colors"
+                className="hand-nav text-4xl text-white/60 hover:text-white transition-colors"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {link.label}

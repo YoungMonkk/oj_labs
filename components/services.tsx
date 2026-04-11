@@ -50,7 +50,7 @@ export function Services() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="font-[family-name:var(--font-script)] text-4xl md:text-5xl text-white mb-3">
+          <h2 className="hand-heading text-5xl md:text-6xl text-white mb-3">
             Services
           </h2>
           <p className="text-white/50 text-base max-w-lg">

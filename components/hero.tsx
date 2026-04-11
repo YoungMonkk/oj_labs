@@ -92,7 +92,7 @@ export function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
             >
-              <p className="font-[family-name:var(--font-script)] text-2xl md:text-3xl text-white">
+              <p className="font-hand text-3xl md:text-4xl text-white/95">
                 Web Development Studio
               </p>
               <p className="text-xs tracking-[0.2em] text-white/50 uppercase">
@@ -113,7 +113,7 @@ export function Hero() {
           >
             {/* Handwritten annotation */}
             <div className="absolute -top-12 right-4 z-20">
-              <p className="font-[family-name:var(--font-script)] text-xl text-white/60">
+              <p className="font-hand text-2xl text-white/65">
                 {"Hi, We're OJ Labs"}
               </p>
               <svg className="absolute -bottom-4 right-0 w-8 h-8 text-[#f97316]" viewBox="0 0 24 24" fill="none">
@@ -129,7 +129,7 @@ export function Hero() {
               
               <div className="bg-white p-3 shadow-2xl">
                 <div className="aspect-square bg-gradient-to-br from-[#1a1a1a] to-[#0a0a0a] flex items-center justify-center border border-white/10">
-                  <span className="font-[family-name:var(--font-script)] text-7xl text-[#f97316]">OJ</span>
+                  <span className="font-hand text-7xl text-[#f97316]">OJ</span>
                 </div>
               </div>
             </div>

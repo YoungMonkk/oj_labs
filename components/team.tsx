@@ -39,7 +39,7 @@ export function Team() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="font-[family-name:var(--font-script)] text-4xl md:text-5xl text-white mb-3">
+          <h2 className="hand-heading text-5xl md:text-6xl text-white mb-3">
             Our Team
           </h2>
           <p className="text-white/50 text-base">
@@ -74,7 +74,7 @@ export function Team() {
                   {/* Avatar */}
                   <div className="aspect-square bg-[#0a0a0a] flex items-center justify-center">
                     <span 
-                      className="font-[family-name:var(--font-script)] text-6xl"
+                      className="font-hand text-6xl"
                       style={{ color: member.tapeColor1 }}
                     >
                       {member.initials}
@@ -91,7 +91,7 @@ export function Team() {
 
               {/* Handwritten label */}
               <p 
-                className={`font-[family-name:var(--font-script)] text-lg text-white/50 mt-4 ${index === 0 ? 'text-right' : 'text-left'}`}
+                className={`font-hand text-2xl text-white/55 mt-4 ${index === 0 ? 'text-right' : 'text-left'}`}
               >
                 {index === 0 ? 'Code wizard' : 'Design guru'}
               </p>
