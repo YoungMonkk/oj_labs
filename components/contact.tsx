@@ -1,5 +1,6 @@
 "use client"
 
+import { useEffect, useState } from "react"
 import { motion } from "framer-motion"
 import {
   ArrowRight,
@@ -18,6 +19,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog"
+import { OPEN_CONTACT_PANEL_EVENT, openContactPanel } from "@/lib/contact-panel"
 
 const contactGroups = [
   {
@@ -81,6 +83,15 @@ const contactGroups = [
 ] as const
 
 export function Contact() {
+  const [open, setOpen] = useState(false)
+
+  useEffect(() => {
+    const handleOpen = () => setOpen(true)
+
+    window.addEventListener(OPEN_CONTACT_PANEL_EVENT, handleOpen)
+    return () => window.removeEventListener(OPEN_CONTACT_PANEL_EVENT, handleOpen)
+  }, [])
+
   return (
     <section id="contact" className="py-24 px-6 md:px-12 relative">
       {/* Dotted Background Pattern */}
@@ -107,13 +118,14 @@ export function Contact() {
             Have a project in mind? {"We'd"} love to hear about it.
           </p>
 
-          <Dialog>
+          <Dialog open={open} onOpenChange={setOpen}>
             <DialogTrigger asChild>
               <motion.button
                 type="button"
                 className="group inline-flex items-center gap-3 rounded-sm bg-[#f97316] px-8 py-4 font-medium text-[#0a0a0a] shadow-[0_18px_40px_rgba(249,115,22,0.18)] transition-colors hover:bg-[#ea580c] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f97316] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a0a]"
                 whileHover={{ y: -3, scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
+                onClick={openContactPanel}
               >
                 Get in touch
                 <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-0.5" />
@@ -172,10 +184,10 @@ export function Contact() {
                                   className="flex items-center justify-between gap-4 rounded-2xl border border-white/8 bg-black/20 px-4 py-3 text-left transition-colors duration-300 hover:border-white/20 hover:bg-white/[0.06]"
                                 >
                                   <div className="min-w-0">
-                                    <p className="truncate text-sm font-medium text-white sm:text-base">
+                                    <p className="font-hand truncate text-[1.9rem] leading-none text-white sm:text-[2.25rem]">
                                       {item.label}
                                     </p>
-                                    <p className="mt-1 truncate text-xs uppercase tracking-[0.22em] text-white/45">
+                                    <p className="mt-2 truncate text-xs uppercase tracking-[0.22em] text-white/45">
                                       {item.helper}
                                     </p>
                                   </div>
