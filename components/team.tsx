@@ -1,19 +1,20 @@
 "use client"
 
+import Image from "next/image"
 import { motion } from "framer-motion"
 
 const teamMembers = [
   {
     name: "Om Wadhwani",
     role: "Co-Founder & Developer",
-    initials: "OW",
+    image: "/pfp/Oj_om.jpeg",
     tapeColor1: "#f97316",
     tapeColor2: "#ec4899",
   },
   {
     name: "Jay Ninave",
     role: "Co-Founder & Designer",
-    initials: "JN",
+    image: "/pfp/oj_jay.jpeg",
     tapeColor1: "#22c55e",
     tapeColor2: "#06b6d4",
   },
@@ -72,13 +73,14 @@ export function Team() {
 
                 <div className="bg-white p-3 shadow-xl">
                   {/* Avatar */}
-                  <div className="aspect-square bg-[#0a0a0a] flex items-center justify-center">
-                    <span 
-                      className="font-hand text-6xl"
-                      style={{ color: member.tapeColor1 }}
-                    >
-                      {member.initials}
-                    </span>
+                  <div className="relative aspect-square overflow-hidden bg-[#0a0a0a]">
+                    <Image
+                      src={member.image}
+                      alt={member.name}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 224px, 224px"
+                    />
                   </div>
                   
                   {/* Name */}
