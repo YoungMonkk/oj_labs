@@ -28,12 +28,12 @@ const contactGroups = [
       {
         label: "+91 9827551707",
         href: "tel:+919827551707",
-        helper: "Primary line",
+        helper: "Om Wadhwani",
       },
       {
         label: "+91 8770785576",
         href: "tel:+918770785576",
-        helper: "Secondary line",
+        helper: "Jay Ninawe",
       },
     ],
   },
