@@ -15,6 +15,7 @@ const projects = [
     liveUrl: "https://www.mindmatterpsychiatry.com/",
     background: "#8b2a56",
     accent: "#451a34",
+    coverImage: "/mindmatters/mindmatters-cover.png",
     images: [
       "/mindmatters/WhatsApp Image 2026-04-10 at 16.49.30.jpeg",
       "/mindmatters/WhatsApp Image 2026-04-10 at 16.51.23.jpeg",
@@ -106,17 +107,17 @@ export function Projects() {
           </p>
         </motion.div>
 
-        <div className="relative">
+        <div className="relative space-y-4 md:space-y-6">
           {projects.map((project, index) => (
             <div
               key={project.client}
-              className={index === projects.length - 1 ? "min-h-[88vh]" : "min-h-[88vh] -mb-[20vh] md:-mb-[24vh]"}
+              className={index === projects.length - 1 ? "min-h-[84vh]" : "min-h-[84vh]"}
             >
               <ProjectCard
                 title={project.title}
                 client={project.client}
                 year={project.year}
-                coverImage={project.images[0]}
+                coverImage={project.coverImage ?? project.images[0]}
                 background={project.background}
                 accent={project.accent}
                 index={index}
