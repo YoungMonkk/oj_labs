@@ -66,6 +66,11 @@ const contactGroups = [
         href: "mailto:omwwadhwani@gmail.com",
         helper: "Drop us the brief",
       },
+      {
+        label: "jayninaweofficial@gmail.com",
+        href: "mailto:jayninaweofficial@gmail.com",
+        helper: "Drop us the brief",
+      },
     ],
   },
   {
@@ -80,7 +85,7 @@ const contactGroups = [
       },
     ],
   },
-] as const
+] as const;
 
 export function Contact() {
   const [open, setOpen] = useState(false)
