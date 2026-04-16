@@ -13,6 +13,10 @@ const projects = [
     title: "Mindmatters Psychiatry",
     year: "2026",
     liveUrl: "https://www.mindmatterpsychiatry.com/",
+    description: [
+      "MindMatters is a modern healthcare web platform designed to simplify access to mental health and medical services. It enables users to seamlessly connect with healthcare professionals, explore services, and manage their interactions in a user-friendly digital environment.",
+      "The platform focuses on improving patient experience by providing features like appointment management, service information, and an intuitive interface that ensures accessibility and ease of use. Built with a scalable architecture, MindMatters aims to bridge the gap between patients and healthcare providers through technology."
+    ],
     background: "#8b2a56",
     accent: "#451a34",
     coverImage: "/mindmatters/mindmatters-cover.png",
@@ -29,6 +33,10 @@ const projects = [
     title: "Diginext CMS",
     year: "2026",
     liveUrl: "https://cms.diginext.co.in/",
+    description: [
+      "DigiNext CMS is a powerful and scalable content management system designed to help businesses efficiently manage their digital presence. It provides an intuitive dashboard for handling content, users, and operations, enabling organizations to streamline workflows and maintain full control over their web platforms.",
+      "Built with a focus on performance and flexibility, DigiNext CMS allows seamless customization, making it suitable for agencies and growing businesses looking to manage multiple clients and services from a single platform."
+    ],
     background: "#1456d2",
     accent: "#0b1e66",
     images: [
@@ -43,6 +51,12 @@ const projects = [
     title: "Hirenext India",
     year: "2026",
     liveUrl: "https://hirenextindia.com/",
+    description: [
+      "HireNext is a comprehensive, end-to-end recruitment and job placement platform designed to streamline the hiring experience for candidates, recruiters, and administrative teams.",
+      "For Candidates: A simplified job search portal where users can browse open positions, view detailed job descriptions, and apply directly.",
+      "For Recruiters: Dedicated portals to log in, submit candidate resumes, and manage their recruitment pipelines efficiently.",
+      "For Administrators: A robust admin panel providing complete oversight of operations. This includes tools for creating recruiter accounts, reviewing uploaded resumes, tracking recruiter performance & attendance, managing manual selections, and handling financial aspects like revenue, billing, and salary history."
+    ],
     background: "#4c8b15",
     accent: "#213f07",
     images: [
@@ -202,9 +216,17 @@ export function Projects() {
                       <p className="text-sm uppercase tracking-[0.3em] text-white/45">
                         Website Gallery
                       </p>
-                      <p className="mt-4 text-white/70">
-                        Open screens from the live build of {activeProject.client}. The first image is used as the cover in the project stack, and the rest expand here as a full-screen walkthrough.
-                      </p>
+                      {'description' in activeProject && activeProject.description ? (
+                        <div className="mt-4 text-white/70 space-y-4">
+                          {(activeProject.description as string[]).map((paragraph, index) => (
+                            <p key={index}>{paragraph}</p>
+                          ))}
+                        </div>
+                      ) : (
+                        <p className="mt-4 text-white/70">
+                          Open screens from the live build of {activeProject.client}. The first image is used as the cover in the project stack, and the rest expand here as a full-screen walkthrough.
+                        </p>
+                      )}
                     </div>
 
                     <div className="space-y-3">

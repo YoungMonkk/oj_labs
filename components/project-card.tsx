@@ -61,7 +61,7 @@ export function ProjectCard({
             {title}
           </h3>
           <p className="max-w-lg text-sm leading-7 text-white/62 md:text-base">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            
           </p>
           <div className="flex items-center gap-3 text-sm text-white/55">
             <span className="rounded-full border border-white/12 bg-white/5 px-4 py-2">
