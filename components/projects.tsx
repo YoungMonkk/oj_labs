@@ -70,6 +70,10 @@ const projects = [
     title: "Plus 4 Academy",
     year: "2026",
     liveUrl: "https://www.plus4academy.com/",
+    description: [
+      "The newly launched website marks the official rebranding of Impulse Academy to Plus 4 Academy. This modern digital platform highlights their ongoing evolution while reinforcing their long-standing commitment to delivering premier educational guidance and academic excellence.",
+      "A standout feature of the portal is its comprehensive, fully online scholarship test system. This infrastructure allows students from all over to register, participate in rigorous assessments, and secure scholarships effortlessly in a seamless digital environment."
+    ],
     background: "#cb6f14",
     accent: "#60300a",
     images: [
