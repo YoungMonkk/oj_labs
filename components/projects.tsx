@@ -140,6 +140,7 @@ export function Projects() {
                 accent={project.accent}
                 index={index}
                 total={projects.length}
+                description={project.description[0]}
                 onOpen={() => setActiveProject(project)}
               />
             </div>
@@ -222,7 +223,7 @@ export function Projects() {
                       </p>
                       {'description' in activeProject && activeProject.description ? (
                         <div className="mt-4 text-white/70 space-y-4">
-                          {(activeProject.description as string[]).map((paragraph, index) => (
+                          {(activeProject.description as string[]).slice(1).map((paragraph, index) => (
                             <p key={index}>{paragraph}</p>
                           ))}
                         </div>

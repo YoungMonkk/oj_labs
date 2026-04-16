@@ -14,6 +14,7 @@ interface ProjectCardProps {
   index: number
   total: number
   onOpen: () => void
+  description: string
 }
 
 export function ProjectCard({
@@ -26,6 +27,7 @@ export function ProjectCard({
   index,
   total,
   onOpen,
+  description,
 }: ProjectCardProps) {
   const cardRef = useRef<HTMLElement>(null)
   const { scrollYProgress } = useScroll({
@@ -61,7 +63,7 @@ export function ProjectCard({
             {title}
           </h3>
           <p className="max-w-lg text-sm leading-7 text-white/62 md:text-base">
-            
+            {description}
           </p>
           <div className="flex items-center gap-3 text-sm text-white/55">
             <span className="rounded-full border border-white/12 bg-white/5 px-4 py-2">
