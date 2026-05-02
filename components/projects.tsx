@@ -12,7 +12,7 @@ const projects = [
     client: "NJK Jwellers",
     title: "New jk jewellers website",
     year: "2026",
-    liveUrl: "https://njkjewellers.com/",
+    liveUrl: "https://www.njkjewellers.com/",
     description: [
       "NJK Jwellers is an exclusive jewellery store from Madhya Pradesh with a new catalogue and about-us website that keeps their showroom feel warm, trusted, and easy to explore.",
       "We shaped the site around heritage, bridal detail, festive collections, and quick enquiries. Visitors can browse jewellery sections, learn the store story, send a form enquiry, or open a WhatsApp conversation when a piece catches the eye.",
