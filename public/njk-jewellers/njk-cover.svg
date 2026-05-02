@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">NJK Jwellers cover</title>
+  <desc id="desc">A warm gold NJK Jwellers brand cover inspired by the provided second screenshot.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7eccb"/>
+      <stop offset="0.48" stop-color="#ead4a1"/>
+      <stop offset="1" stop-color="#fbf3d8"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="42%" cy="50%" r="62%">
+      <stop offset="0" stop-color="#fff7df" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#fff7df" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#5a3510" flood-opacity="0.18"/>
+    </filter>
+    <filter id="inkShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#000000" flood-opacity="0.32"/>
+    </filter>
+    <pattern id="grain" width="8" height="8" patternUnits="userSpaceOnUse">
+      <path d="M0 0h1v1H0zM4 4h1v1H4z" fill="#8c6f33" opacity="0.08"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#glow)"/>
+  <rect width="1600" height="900" fill="url(#grain)"/>
+
+  <g filter="url(#softShadow)" opacity="0.65">
+    <ellipse cx="930" cy="440" rx="520" ry="190" fill="#fff4cf"/>
+  </g>
+
+  <g transform="translate(185 340) scale(1.25)" filter="url(#inkShadow)">
+    <path d="M37 102c-18-9-27-24-27-44 0-18 7-34 21-47 11-10 24-16 38-16 13 0 24 5 33 14 8 9 12 21 12 35v75h-22V45c0-9-2-16-7-21-5-6-11-8-19-8-10 0-18 4-25 12-7 8-11 18-11 30 0 15 6 27 18 35l15 10c10 7 18 14 24 22 6 9 9 19 9 31 0 14-5 26-16 36-10 10-24 15-40 15-17 0-31-5-42-15l11-18c9 8 19 12 30 12 9 0 17-3 23-8 6-6 9-13 9-21 0-13-8-25-25-35l-10-6z" fill="#1f1f1f"/>
+    <path d="M137 119V11h22v46l47-46h28l-52 50 58 58h-31l-50-51v51h-22z" fill="#1f1f1f"/>
+    <path d="M72 38c20 0 33 9 41 27 7-18 21-27 41-27 15 0 27 5 36 14 9 10 14 22 14 38s-5 29-15 39c-10 10-23 15-39 15-14 0-26-4-35-13-9 9-21 13-36 13-16 0-29-5-39-15-10-10-15-23-15-39 0-15 5-28 14-38 9-9 20-14 33-14zm6 20c-8 0-15 3-20 9-5 6-8 14-8 23 0 10 3 18 9 24s13 9 22 9c10 0 18-4 25-12-4-7-6-14-6-21 0-8 2-15 6-22-7-7-16-10-28-10zm76 0c-12 0-21 3-28 10 4 7 6 14 6 22 0 7-2 14-6 21 7 8 15 12 25 12 9 0 16-3 22-9s9-14 9-24c0-9-3-17-8-23-5-6-12-9-20-9z" fill="none" stroke="#1f1f1f" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="206" y="16" font-family="Georgia, serif" font-size="26" font-weight="700" fill="#1f1f1f">TM</text>
+    <path d="M114-38 145-4 114 30 83-4z" fill="#171717"/>
+    <path d="M114-38 126-4 114 30 102-4z" fill="#f2f2f2" opacity="0.65"/>
+    <path d="M83-4h62M97-22l17 52 17-52" fill="none" stroke="#ffffff" stroke-width="3" opacity="0.72"/>
+  </g>
+
+  <g transform="translate(590 385)">
+    <text x="0" y="16" font-family="Arial, Helvetica, sans-serif" font-size="15" letter-spacing="9" fill="#a86f11">SINCE 1962</text>
+    <text x="0" y="82" font-family="Georgia, 'Times New Roman', serif" font-size="70" letter-spacing="14" fill="#251006">NJK JWELLERS</text>
+  </g>
+</svg>

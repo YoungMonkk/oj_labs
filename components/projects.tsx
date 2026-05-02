@@ -9,6 +9,23 @@ import { ProjectCard } from "./project-card"
 
 const projects = [
   {
+    client: "NJK Jwellers",
+    title: "New jk jewellers website",
+    year: "2026",
+    liveUrl: "https://njkjewellers.com/",
+    description: [
+      "NJK Jwellers is an exclusive jewellery store from Madhya Pradesh with a new catalogue and about-us website that keeps their showroom feel warm, trusted, and easy to explore.",
+      "We shaped the site around heritage, bridal detail, festive collections, and quick enquiries. Visitors can browse jewellery sections, learn the store story, send a form enquiry, or open a WhatsApp conversation when a piece catches the eye.",
+      "The whole build leans into soft gold, roomy product visuals, and a calm luxury rhythm, because jewellery should feel chosen, not rushed."
+    ],
+    background: "#b98728",
+    accent: "#32180b",
+    coverImage: "/njk-jewellers/njk-cover.svg",
+    images: [
+      "/njk-jewellers/njk-cover.svg",
+    ],
+  },
+  {
     client: "Mindmatters",
     title: "Mindmatters Psychiatry",
     year: "2026",
