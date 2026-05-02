@@ -20,9 +20,9 @@ const projects = [
     ],
     background: "#b98728",
     accent: "#32180b",
-    coverImage: "/njk-jewellers/njk-cover.svg",
+    coverImage: "/njk-jewellers/njk-cover.png",
     images: [
-      "/njk-jewellers/njk-cover.svg",
+      "/njk-jewellers/njk-cover.png",
     ],
   },
   {
